@@ -6,7 +6,7 @@ const PostCard = ({ data }) => {
   return (
     <div>
       <Link href={`/posts/${data.id}`}>
-        <h1>
+        <h1 className="text-3xl">
           {data.id}.- {data.title}
         </h1>
       </Link>

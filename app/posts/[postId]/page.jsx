@@ -13,7 +13,7 @@ const page = async ({ params }) => {
   const data = await loadPost(params.postId);
   return (
     <div>
-      <h1>
+      <h1 className="text-3xl font-bold px-5 py-2">
         {data.id}.- {data.title}
       </h1>
       <p>{data.body}</p>
